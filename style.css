@@ -82,12 +82,17 @@ a {
     color: rgb(255, 255, 255);
 }
 
+.right-nav a:hover{
+    color: rgb(175, 175, 175);
+}
+
 /* header coding end */
 
 /* main section coding start */
 /* first-section start */
 main {
     max-width: 1369px;
+    min-width: 320px;
     width: 100%;
     height: 100vh;
     overflow-y: auto;
@@ -124,7 +129,7 @@ main::-webkit-scrollbar-thumb:hover {
     width: 40%;
     display: flex;
     justify-content: center;
-    flex-direction: column;
+    align-items: center;
     padding-bottom: 80px;
 }
 
@@ -148,8 +153,7 @@ h5 {
 }
 
 .right-section img {
-    width: 300px;
-    margin: 0 80px;
+    width: 500px;
 }
 
 .left-section span {
@@ -169,7 +173,7 @@ h5 {
 
 .header-icon {
     font-size: 20px;
-    color: rgb(97, 97, 97);
+    color: rgb(160, 160, 160);
     cursor: pointer;
     margin-right: 15px;
 }
@@ -570,6 +574,15 @@ h5 {
     position: relative;
     z-index: 1;
     overflow: hidden;
+    border: 5px solid rgb(0, 59, 75);
+    background: linear-gradient(-25deg, #003028, #000830 100%);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.555);
+}
+
+.contact-img:hover{
+    background: linear-gradient(-25deg, #00493d, #000b41 100%);
+    transition: .2s all ease;
+    box-shadow: 5px 5px 10px rgb(0, 0, 0);
 }
 
 .contact-img img {
@@ -913,11 +926,13 @@ h5 {
     .left-section,
     .right-section {
         width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         text-align: center;
     }
 
     .right-section img {
-        width: 250px;
         margin: 20px auto;
     }
 }
@@ -994,6 +1009,15 @@ h5 {
         height: auto;
     }
 
+    .right-section, .right-section{
+        padding: 0;
+        margin: 0;
+    }
+
+    .right-section, .right-section{
+        padding: 50px;
+    }
+
     html {
         scroll-behavior: smooth;
     }
@@ -1027,6 +1051,30 @@ h5 {
         height: auto;
         width: 100%;
         padding: 100px 40px;
+    }
+
+    .left-section, 
+    .right-section,
+    .servics-box,
+    .work-box
+    {
+        width: 100%;
+        padding: 0;
+        margin: 10px 0;
+    }
+
+    .about-section{
+        width: 100%;
+        padding: 15px;
+    }
+
+    .servics-text{
+        padding: 2%;
+    }
+
+    .third-section-box{
+        padding: 0;
+        margin: 0;
     }
 }
 
